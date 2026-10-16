@@ -1,0 +1,14 @@
+name: Checks
+on: [push, pull_request]
+jobs:
+  protocol-and-parser:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r tools/requirements.txt
+      - run: python -m unittest discover -s tests -v
+      - name: Parser with address and undefined behavior sanitizers
+        run: gcc -std=c11 -Wall -Wextra -Werror -fsanitize=address,undefined -fno-omit-frame-pointer -I firmware/src tests/parser_harness.c firmware/src/adv_parser.c -o /tmp/parser-test && /tmp/parser-test

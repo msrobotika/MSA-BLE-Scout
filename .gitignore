@@ -1,0 +1,7 @@
+.pio/
+__pycache__/
+*.pyc
+.venv/
+original.bin
+evidencia*.json
+firmware/sdkconfig.scout

@@ -1,0 +1,12 @@
+{
+  "success": true,
+  "parser_vectors": 9,
+  "malformed_hex_rejected": true,
+  "missing_confirmation_rejected": true,
+  "writes_unavailable": true,
+  "invalid_selection_rejected": true,
+  "console_recovers_after_overlong_line": true,
+  "parse_tests_do_not_inject_radio_events": true,
+  "guard_tests_did_not_connect_or_read": true,
+  "timestamp": 1792179665.1888938
+}
