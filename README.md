@@ -1,5 +1,10 @@
 # MSA BLE Scout
 
+> **Ficha del proyecto · MS ROBOTIKA**  
+> **Estado:** Prototipo experimental BLE con comprobación en dispositivo · **Licencia:** [LICENSE](LICENSE)  
+> [Capturas del dispositivo](docs/) · [Workflow](.github/workflows/checks.yml) · [Validación pendiente](docs/PROJECT_STATUS.md)  
+> **Límite:** Descubrimiento pasivo y consultas GATT autorizadas; las medidas RSSI no determinan una posición.
+
 **Un inspector Bluetooth LE de bolsillo, con pantalla y controles físicos.**
 
 Proyecto experimental de MSA_Robotika para aprender a auditar tus propios dispositivos BLE: ver anuncios, explorar servicios GATT y comprobar lecturas concretas sin emparejarse ni escribir atributos.

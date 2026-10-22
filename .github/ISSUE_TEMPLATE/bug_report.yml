@@ -1,0 +1,20 @@
+name: "Bug report"
+description: "Incidencia reproducible con firmware, placa y logs anonimizados"
+title: "[bug] "
+body:
+  - type: input
+    id: hardware
+    attributes:
+      label: Placa, firmware, commit y pantalla
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Pasos y comportamiento esperado
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidencias sin direcciones de terceros ni claves
